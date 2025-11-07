@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
 
 function MainContent() {
+  const mainContentStyle = {
+    padding: "20px",
+    backgroundColor: "#f0f0f0",
+    borderRadius: "10px",
+    textAlign: "center",
+    color: "#333",
+  };
+
   return (
-    <main style={{ backgroundColor: '#f5f5f5', padding: '20px', textAlign: 'center' }}>
-      <h2>Welcome to My City Guide</h2>
-      <p>Here you’ll find information about my favorite cities around the world!</p>
+    <main style={mainContentStyle}>
+      <p>I love to visit New York, Paris, and Tokyo.</p>
     </main>
   );
 }
