@@ -8,13 +8,11 @@ const RecipeList = () => {
   return (
     <div>
       <h2>Recipe List</h2>
-      <ul>
-        {recipes.map((recipe) => (
-          <li key={recipe.id}>
-            <Link to={`/recipe/${recipe.id}`}>{recipe.title}</Link>
-          </li>
-        ))}
-      </ul>
+      {recipes.map((recipe) => (
+        <div key={recipe.id}>
+          <Link to={`/recipe/${recipe.id}`}>{recipe.title}</Link>
+        </div>
+      ))}
     </div>
   );
 };
