@@ -1,0 +1,7 @@
+/* minimal styles so the starter looks okay */
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; padding: 16px; }
+.app { max-width: 900px; margin: 0 auto; }
+.search-row { display:flex; gap:8px; margin-bottom:16px }
+.user-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:12px }
+.card { border:1px solid #e5e7eb; padding:12px; border-radius:8px }
+.avatar { width:64px; height:64px; border-radius:50% }
