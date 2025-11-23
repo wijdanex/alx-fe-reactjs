@@ -1,0 +1,5 @@
+﻿body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; padding: 20px; }
+.app { max-width: 900px; margin: 0 auto; }
+.search-row { display:flex; gap:8px; margin-bottom:16px }
+.user-card { border:1px solid #e5e7eb; padding:12px; border-radius:8px; width:320px; }
+.avatar { width:80px; height:80px; border-radius:50%; }
