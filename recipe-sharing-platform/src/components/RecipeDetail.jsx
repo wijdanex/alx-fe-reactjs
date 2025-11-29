@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import data from "../data.json";
 
 function RecipeDetail() {
   const { id } = useParams();
-  const recipe = data.find((r) => String(r.id) === String(id));
+  const [recipe, setRecipe] = useState(null);
+
+  useEffect(() => {
+    // Load recipe data when component mounts
+    const foundRecipe = data.find((r) => String(r.id) === String(id));
+    setRecipe(foundRecipe);
+  }, [id]);
 
   if (!recipe) {
     return (
       <div className="p-8">
-        <h2 className="text-2xl font-semibold mb-4">Recipe not found</h2>
+        <h2 className="text-2xl font-semibold mb-4">Loading or Recipe not found</h2>
         <Link to="/" className="text-blue-500 underline">
           Back to home
         </Link>
