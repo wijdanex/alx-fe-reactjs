@@ -71,7 +71,7 @@ function AddRecipeForm() {
     return newErrors;
   };
 
-  // Handle form submission
+  // Handle form submission with validation
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = validateForm();
@@ -79,13 +79,14 @@ function AddRecipeForm() {
     if (Object.keys(newErrors).length === 0) {
       // Form is valid - show success message
       setSubmitted(true);
-      console.log("Form submitted:", formData);
+      console.log("Form submitted successfully:", formData);
 
       // Reset form after 2 seconds and redirect
       setTimeout(() => {
         navigate("/");
       }, 2000);
     } else {
+      // Form has errors - display them
       setErrors(newErrors);
     }
   };
@@ -105,18 +106,18 @@ function AddRecipeForm() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
-      <div className="max-w-2xl mx-auto">
-        <Link to="/" className="text-blue-500 underline mb-6 inline-block hover:text-blue-600">
+    <div className="min-h-screen bg-gray-50 p-4 md:p-6 lg:p-8">
+      <div className="w-full max-w-2xl mx-auto">
+        <Link to="/" className="inline-block text-blue-500 underline mb-6 hover:text-blue-600 transition">
           ← Back to Recipes
         </Link>
 
-        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+        <div className="w-full bg-white rounded-lg shadow-lg p-6 sm:p-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
             Add a New Recipe
           </h1>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6" noValidate>
             {/* Title Field - Styled with Tailwind CSS */}
             <div>
               <label htmlFor="title" className="block text-sm font-bold text-gray-800 mb-2">
