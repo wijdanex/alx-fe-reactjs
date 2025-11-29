@@ -3,18 +3,81 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/300"
+    "image": "https://via.placeholder.com/300",
+    "ingredients": [
+      "400g spaghetti",
+      "200g bacon or pancetta, diced",
+      "4 large eggs",
+      "100g Pecorino Romano cheese, grated",
+      "2 cloves garlic, minced",
+      "Black pepper to taste",
+      "Salt for pasta water"
+    ],
+    "instructions": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "While pasta cooks, fry bacon until crispy.",
+      "Whisk eggs with grated cheese and black pepper.",
+      "Drain pasta, reserving 1 cup of pasta water.",
+      "Toss hot pasta with bacon in a large bowl.",
+      "Remove from heat and quickly add egg mixture, stirring constantly.",
+      "Add pasta water gradually to achieve creamy consistency.",
+      "Serve immediately with extra cheese and pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/300"
+    "image": "https://via.placeholder.com/300",
+    "ingredients": [
+      "800g boneless chicken breasts, cubed",
+      "1 cup yogurt",
+      "3 tbsp tikka masala paste",
+      "400ml coconut milk",
+      "2 tbsp tomato paste",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger, minced",
+      "2 tbsp ghee or oil",
+      "Fresh cilantro for garnish",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and tikka masala paste for at least 2 hours.",
+      "Heat ghee in a large pan and cook chicken until golden. Set aside.",
+      "In the same pan, sauté onion, garlic, and ginger until fragrant.",
+      "Add tomato paste and cook for 1 minute.",
+      "Stir in coconut milk and bring to a simmer.",
+      "Add cooked chicken back to the pan.",
+      "Simmer for 15-20 minutes until chicken is cooked through.",
+      "Season with salt and pepper to taste.",
+      "Garnish with fresh cilantro and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Avocado Toast",
     "summary": "Simple, healthy, and delicious toast topped with mashed avocado, salt, and pepper.",
-    "image": "https://via.placeholder.com/300"
+    "image": "https://via.placeholder.com/300",
+    "ingredients": [
+      "2 slices of bread (whole grain preferred)",
+      "1 ripe avocado",
+      "1 tbsp lemon juice",
+      "Sea salt",
+      "Black pepper",
+      "Red pepper flakes (optional)",
+      "2 tbsp olive oil",
+      "Cherry tomatoes for serving"
+    ],
+    "instructions": [
+      "Toast the bread until golden brown and crispy.",
+      "While toast is cooking, cut the avocado in half and remove the pit.",
+      "Scoop avocado into a bowl and mash with a fork.",
+      "Mix in lemon juice, salt, and pepper.",
+      "Spread the mashed avocado onto the toast.",
+      "Drizzle with olive oil.",
+      "Sprinkle with red pepper flakes if desired.",
+      "Serve immediately with cherry tomatoes on the side."
+    ]
   }
 ]
