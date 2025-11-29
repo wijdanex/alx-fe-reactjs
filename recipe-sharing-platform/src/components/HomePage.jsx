@@ -1,12 +1,22 @@
 import { useState, useEffect } from "react";
-import data from "../data.json";
+import fallbackData from "../data.json";
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    // Load mock data from the imported JSON file
-    setRecipes(data);
+    // Prefer fetching from the public folder so dev/build serve the JSON at /data.json
+    fetch("/data.json")
+      .then((response) => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+      })
+      .then((data) => setRecipes(data))
+      .catch((error) => {
+        // Fallback to the bundled JSON (useful during some dev setups)
+        console.warn("Fetch failed, falling back to bundled data:", error);
+        setRecipes(fallbackData);
+      });
   }, []);
 
   return (
