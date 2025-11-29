@@ -1,8 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import RecipeDetail from "./components/RecipeDetail";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold text-blue-600">
-      Tailwind is working! 🎉
-    </h1>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
+      </Routes>
+    </div>
   );
 }
 
