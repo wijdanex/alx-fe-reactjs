@@ -19,23 +19,14 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
+    // ✅ Basic validation logic
     if (!formData.username || !formData.email || !formData.password) {
       setError("All fields are required!");
       return;
     }
 
     setError("");
-    console.log("Submitting data:", formData);
-
-    // Mock API simulation
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: { "Content-type": "application/json; charset=UTF-8" },
-    })
-      .then((res) => res.json())
-      .then((data) => console.log("API response:", data));
+    console.log("Controlled form submitted:", formData);
   };
 
   return (
