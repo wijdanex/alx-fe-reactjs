@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import AddTodoForm from "./AddTodoForm";
 
 const TodoList = () => {
+  // ✅ Initial demo todos
   const [todos, setTodos] = useState([
     { id: 1, text: "Learn React", completed: false },
     { id: 2, text: "Build a Todo App", completed: true },
   ]);
 
+  // ✅ Add todo
   const addTodo = (text) => {
     const newTodo = { id: Date.now(), text, completed: false };
     setTodos([...todos, newTodo]);
   };
 
+  // ✅ Toggle todo
   const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) =>
@@ -20,6 +23,7 @@ const TodoList = () => {
     );
   };
 
+  // ✅ Delete todo
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
